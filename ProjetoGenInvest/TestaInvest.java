@@ -59,16 +59,15 @@ public class TestaInvest extends Investimento {
 
 		//Variavel
 		System.out.println();
-		v1.setTitulo("Renda Variavel");
-		v1.setRentA(12.50);
+		v1.setTitulo("Renda Variavel"); 
+		v1.setRentA(12.50); // Porcetagem 
 		v1.setInvestMin(250.00;); // Valor minimo
 		v1.setPrecoUni(1000.00); // valor maximo --> ?
 		v1.setVencF("07/12/2023"); //tempo de investimento 
 		v1.setSobre("A renda variável consiste em diferentes tipos de ativos financeiros com uma mesma característica: rentabilidade imprevisível."
 			    + "Por isso, seus investimentos costumam estar associados à palavra volatilidade." 
 			    + "Normalmente, essa instabilidade acontece por esses ativos dependerem muito do cenário econômico e político do país, assim como do desempenho de empresas e áreas do mercado privado."
-			    + "Ou seja, em uma hora seu investimento pode estar subindo e minutos depois caindo próximo a zero. "
-				");
+			    + "Ou seja, em uma hora seu investimento pode estar subindo e minutos depois caindo próximo a zero.");
 			    /*
 			    Criptomoedas
 Bitcoin, Tether, Dash, Ripple… os nomes das criptomoedas ficaram bem famosos nos últimos anos. E elas também são consideradas um tipo de renda variável.

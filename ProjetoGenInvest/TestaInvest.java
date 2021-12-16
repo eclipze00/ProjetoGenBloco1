@@ -12,8 +12,7 @@ public class TestaInvest extends Investimento {
 		Fixa f1 = new Fixa();
 		Tesouro t1 = new Tesouro();
 		Variavel v1 = new Variavel();
-		
-		
+				
 		//Fixa
 		f1.setTitulo("CDB IPCA +6,07%");
 		f1.setRentA(14.16);
@@ -31,9 +30,7 @@ public class TestaInvest extends Investimento {
 		System.out.println("Vencimento: " + f1.getVencF());
 		System.out.println();
 		System.out.println("================================================================================================================================================================");
-		
-		
-		
+				
 		//Tesouro Direto
 		System.out.println();
 		t1.setTitulo("Tesouro Prefixado 2024");
@@ -46,7 +43,6 @@ public class TestaInvest extends Investimento {
 				+ "(sempre R$ 1.000 por unidade de título) " + "\nÉ mais interessante para quem pode deixar o seu dinheiro render até o vencimento do investimento, pois não paga juro semestrais."
 				+ "\nEm caso de resgate antecipado, o Tesouro Nacional garante sua recompra pelos seus valores de mercado.");
 				
-		
 		System.out.println("Sobre: " + t1.getSobre());
 		System.out.println();
 		System.out.println("Nome do título: "  + t1.getTitulo());
@@ -75,7 +71,6 @@ Aqui no blog da CashMe já falamos mais a fundo sobre as criptomoedas, mas, de f
 sem intermédio de bancos.
 Elas são um exemplo bem claro de como a renda variável oscila bastante. Basta avaliar a valorização e desvalorização da bitcoin.*/
 				
-		
 		System.out.println("Sobre: " + v1.getSobre());
 		System.out.println();
 		System.out.println("Nome do título: "  + v1.getTitulo());

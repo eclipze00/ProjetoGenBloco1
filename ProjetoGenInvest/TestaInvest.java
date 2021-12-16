@@ -24,10 +24,10 @@ public class TestaInvest extends Investimento {
 		
 		System.out.println("Sobre: " + f1.getSobre());
 		System.out.println();
-		System.out.println("Nome do tÌtulo: "  + f1.getTitulo());
+		System.out.println("Nome do t√≠tulo: "  + f1.getTitulo());
 		System.out.println("Rentabilidade Anual: " + "R$" + f1.getRentA());
-		System.out.println("Investimento MÌnimo: " + "R$" + f1.getInvestMin());
-		System.out.println("PreÁo Unit·rio: " + "R$" + f1.getPrecoUni());
+		System.out.println("Investimento M√≠nimo: " + "R$" + f1.getInvestMin());
+		System.out.println("Pre√ßo Unit√°rio: " + "R$" + f1.getPrecoUni());
 		System.out.println("Vencimento: " + f1.getVencF());
 		System.out.println();
 		System.out.println("================================================================================================================================================================");
@@ -42,41 +42,48 @@ public class TestaInvest extends Investimento {
 		t1.setPrecoUni(771.03);
 		t1.setVencF("01/07/2024");
 		t1.setSobre("Indicado para aqueles que querem realizar investimentos de curto prazo."
-				+ "\nTÌtulo prefixado, ou seja, no momento da compra, vocÍ j· sabe exatamente quanto ir· receber no futuro "
-				+ "(sempre R$ 1.000 por unidade de tÌtulo) " + "\n… mais interessante para quem pode deixar o seu dinheiro render atÈ o vencimento do investimento, pois n„o paga juro semestrais."
+				+ "\nT√≠tulo prefixado, ou seja, no momento da compra, voc√™ j√° sabe exatamente quanto ir√° receber no futuro "
+				+ "(sempre R$ 1.000 por unidade de t√≠tulo) " + "\n√â mais interessante para quem pode deixar o seu dinheiro render at√© o vencimento do investimento, pois n√£o paga juro semestrais."
 				+ "\nEm caso de resgate antecipado, o Tesouro Nacional garante sua recompra pelos seus valores de mercado.");
 				
 		
 		System.out.println("Sobre: " + t1.getSobre());
 		System.out.println();
-		System.out.println("Nome do tÌtulo: "  + t1.getTitulo());
+		System.out.println("Nome do t√≠tulo: "  + t1.getTitulo());
 		System.out.println("Rentabilidade Anual: " + "R$" + t1.getRentA());
-		System.out.println("Investimento MÌnimo: " + "R$" + t1.getInvestMin());
-		System.out.println("PreÁo Unit·rio: " + "R$" + t1.getPrecoUni());
+		System.out.println("Investimento M√≠nimo: " + "R$" + t1.getInvestMin());
+		System.out.println("Pre√ßo Unit√°rio: " + "R$" + t1.getPrecoUni());
 		System.out.println("Vencimento: " + t1.getVencF());
 		System.out.println();
 		System.out.println("================================================================================================================================================================");
 
 		//Variavel
 		System.out.println();
-		v1.setTitulo("Tesouro Prefixado 2024");
-		v1.setRentA(10.87);
-		v1.setInvestMin(30.84);
-		v1.setPrecoUni(771.03);
-		v1.setVencF("01/07/2024");
-		v1.setSobre("Indicado para aqueles que querem realizar investimentos de curto prazo."
-				+ "\nTÌtulo prefixado, ou seja, no momento da compra, vocÍ j· sabe exatamente quanto ir· receber no futuro "
-				+ "(sempre R$ 1.000 por unidade de tÌtulo) " + "\n… mais interessante para quem pode deixar o seu dinheiro render atÈ o vencimento do investimento, pois n„o paga juro semestrais."
-				+ "\nEm caso de resgate antecipado, o Tesouro Nacional garante sua recompra pelos seus valores de mercado.");
+		v1.setTitulo("Renda Variavel");
+		v1.setRentA(12.50);
+		v1.setInvestMin(250.00;); // Valor minimo
+		v1.setPrecoUni(1000.00); // valor maximo --> ?
+		v1.setVencF("07/12/2023"); //tempo de investimento 
+		v1.setSobre("A renda vari√°vel consiste em diferentes tipos de ativos financeiros com uma mesma caracter√≠stica: rentabilidade imprevis√≠vel."
+			    + "Por isso, seus investimentos costumam estar associados √† palavra volatilidade." 
+			    + "Normalmente, essa instabilidade acontece por esses ativos dependerem muito do cen√°rio econ√¥mico e pol√≠tico do pa√≠s, assim como do desempenho de empresas e √°reas do mercado privado."
+			    + "Ou seja, em uma hora seu investimento pode estar subindo e minutos depois caindo pr√≥ximo a zero. "
+				");
+			    /*
+			    Criptomoedas
+Bitcoin, Tether, Dash, Ripple‚Ä¶ os nomes das criptomoedas ficaram bem famosos nos √∫ltimos anos. E elas tamb√©m s√£o consideradas um tipo de renda vari√°vel.
+Aqui no blog da CashMe j√° falamos mais a fundo sobre as criptomoedas, mas, de forma resumida, podemos entend√™-las como moedas virtuais usadas como forma de pagamento,
+sem interm√©dio de bancos.
+Elas s√£o um exemplo bem claro de como a renda vari√°vel oscila bastante. Basta avaliar a valoriza√ß√£o e desvaloriza√ß√£o da bitcoin.*/
 				
 		
-		System.out.println("Sobre: " + t1.getSobre());
+		System.out.println("Sobre: " + v1.getSobre());
 		System.out.println();
-		System.out.println("Nome do tÌtulo: "  + t1.getTitulo());
-		System.out.println("Rentabilidade Anual: " + "R$" + t1.getRentA());
-		System.out.println("Investimento MÌnimo: " + "R$" + t1.getInvestMin());
-		System.out.println("PreÁo Unit·rio: " + "R$" + t1.getPrecoUni());
-		System.out.println("Vencimento: " + t1.getVencF());
+		System.out.println("Nome do t√≠tulo: "  + v1.getTitulo());
+		System.out.println("Rentabilidade Anual: " + "R$" + v1.getRentA());
+		System.out.println("Investimento M√≠nimo: " + "R$" + v1.getInvestMin());
+		System.out.println("Pre√ßo Unit√°rio: " + "R$" + v1.getPrecoUni());
+		System.out.println("Vencimento: " + v1.getVencF());
 
 	}
 

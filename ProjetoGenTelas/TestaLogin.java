@@ -1,4 +1,4 @@
-package br.com.generation.ProjetoGen_1;
+package br.com.generation.ProjetoGenTelas;
 
 public class TestaLogin {
 
@@ -21,12 +21,12 @@ public class TestaLogin {
 		System.out.println(" Senha: " + t1.senha);
 		System.out.println();
 		
-		System.out.println("_______________________________________________________");
 		
-		//if
+		
 		t2.error();
 		System.out.println(" Login: " + t2.login);
 		System.out.println();
+		
 		
 	}
 }

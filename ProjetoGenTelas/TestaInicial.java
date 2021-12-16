@@ -1,4 +1,4 @@
-package br.com.generation.ProjetoGen_1;
+package br.com.generation.ProjetoGenTelas;
 
 import java.util.Scanner;
 
@@ -33,6 +33,8 @@ public class TestaInicial {
 		l1.dep(dep1);
 			System.out.println("Valor atualizado: " + "R$" + l1.deposito);
 			System.out.println();
+		
+			input.close();
 		}
 
 	}

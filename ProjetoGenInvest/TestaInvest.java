@@ -19,7 +19,9 @@ public class TestaInvest extends Investimento {
 		f1.setInvestMin(100.00);
 		f1.setPrecoUni(114.16);
 		f1.setVencF("12/12/2022");
-		f1.setSobre("");
+		f1.setSobre("A principal característica dos fundos da classe “Renda Fixa” que recebem o sufixo “Curto Prazo” está relacionada ao vencimento dos títulos que compõem a sua carteira," +
+			    "que precisam respeitar o prazo máximo a decorrer de 375 dias, e prazo médio da carteira inferior a 60 dias" + 
+			   "ATENÇÃO: "+ "Os fundos da classe “Renda Fixa” que recebem os sufixos “Curto Prazo”, “Referenciado” e “Simples” podem utilizar derivativos apenas para proteção da carteira.");
 		
 		System.out.println("Sobre: " + f1.getSobre());
 		System.out.println();

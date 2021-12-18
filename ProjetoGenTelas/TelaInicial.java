@@ -2,64 +2,69 @@ package br.com.generation.ProjetoGenTelas;
 
 public class TelaInicial {
 	
-	String nome;
-	String agencia;
-	String conta;
-	double saldo = 3000;
+	private String nome;
+	private String agencia;
+	private String conta;
+	private double saldo = 3000;
+	private double deposito = 0;
+	private double saque = 0;
+	private double extrato = 0;
 	
-	//double investMais;
-	//double investMenos;
-	double deposito = 0;
-	
-	
-	//Nome
-	void escreva2() {
-		System.out.println("|======================|");
-		System.out.println("|                      |");
-		System.out.println("|   Nome do Cliente:   |");
-		System.out.println("|                      |");
-		System.out.println("|======================|");
-		System.out.println();
+			
+	public String getNome() {
+		return nome;
 	}
-	//Agencia
-	void ag() {
-		System.out.println("|======================|");
-		System.out.println("|                      |");
-		System.out.println("|  Agência do Cliente: |");
-		System.out.println("|                      |");
-		System.out.println("|======================|");
-		System.out.println();
-	//Conta	
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
-	void cont() {
-		System.out.println("|======================|");
-		System.out.println("|                      |");
-		System.out.println("|   Conta do Cliente:  |");
-		System.out.println("|                      |");
-		System.out.println("|======================|");
-		System.out.println();
+	public String getAgencia() {
+		return agencia;
 	}
-	//Saldo
-		void sal() {
-			System.out.println("|==========================|");
-			System.out.println("|                          |");
-			System.out.println("|   Saldo do cliente é de: |");
-			System.out.println("|                          |");
-			System.out.println("|==========================|");
-			System.out.println();
+	public void setAgencia(String agencia) {
+		this.agencia = agencia;
+	}
+	public String getConta() {
+		return conta;
+	}
+	public void setConta(String conta) {
+		this.conta = conta;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public double getDeposito(double dep1) {
+		deposito = saldo + dep1;
+		extrato = saldo++;
+		return deposito;
+	}
+	public void setDeposito(double deposito) {
+		this.deposito = deposito;
+	}
+	public double getSaque(double saq1) {
+		saque = saldo - saq1; 
+		extrato = saldo--;
+		return saque;
+	}
+	public void setSaque(double saque) {
+		this.saque = saque;
+	}
+	public double getExtrato(double ext1) {
+		if(extrato > 0) {
+			System.out.println("Depositado: " + extrato);
+		}
+		else if(extrato < 0) {
+			System.out.println("Saque: " +Math.abs(extrato));
+		}
+		else {
+			System.out.println("Nenhuma nova transição!");
+		}
+		return extrato;
+	}
+	public void setExtrato(double extrato) {
+		this.extrato = extrato;
+	}
 		
-	
-	}
-	//Deposito
-		void dep(double dep1) {
-			deposito = saldo + dep1;
-			System.out.println("|==========================|");
-			System.out.println("|                          |");
-			System.out.println("|   Depósito no valor de:  |");
-			System.out.println("|                          |");
-			System.out.println("|==========================|");
-			System.out.println();
-	}
-		
-
 }

@@ -2,8 +2,7 @@ package br.com.generation.ProjetoGenInvest;
 
 public class Investimento {
 	
-	private double valorIn; //Valor colocado para investimento
-	private double valorOut; //Valor retirado no investimento
+	
 	private double fixa; // cdb 
 	private double tesouro; // Selic 
 	private double variavel; // Criptomoeda
@@ -14,24 +13,11 @@ public class Investimento {
 	
 	public Investimento(double valorIn, double valorOut, double fixa, double tesouro, double variavel) {
 		super();
-		this.valorIn = valorIn;
-		this.valorOut = valorOut;
 		this.fixa = fixa;
 		this.tesouro = tesouro;
 		this.variavel = variavel;
 	}
-	public double getValorIn() {
-		return valorIn;
-	}
-	public void setValorIn(double valorIn) {
-		this.valorIn = valorIn;
-	}
-	public double getValorOut() {
-		return valorOut;
-	}
-	public void setValorOut(double valorOut) {
-		this.valorOut = valorOut;
-	}
+
 	public double getFixa() {
 		return fixa;
 	}

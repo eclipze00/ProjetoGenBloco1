@@ -1,12 +1,11 @@
 package br.com.generation.ProjetoGenTelas;
 
-import java.util.Scanner;
 
 public class TestaLogin{
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);		
+			
 		TelaLogin t1 = new TelaLogin();	
 		
 		

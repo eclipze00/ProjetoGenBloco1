@@ -7,10 +7,7 @@ public class Investimento {
 	private double tesouro; // Selic 
 	private double variavel; // Criptomoeda
 	
-	
-	
-	
-	
+		
 	public Investimento(double valorIn, double valorOut, double fixa, double tesouro, double variavel) {
 		super();
 		this.fixa = fixa;

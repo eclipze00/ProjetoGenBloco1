@@ -34,28 +34,28 @@ public class TestaInicial {
 			
 			
 			do {		
-				System.out.println("Escolha uma opção (A/B/C): ");
-				opcao = (char)System.in.read();
+				System.out.printf("Escolha uma opção: \nA - Consulta de saldo:\nB - Deposito:\nC - Saque: ");
+				opcao = input.next().charAt(0);
 									
 				if(opcao == 'A' || opcao == 'a') {
-				System.out.println("Saldo de: " + "R$" + l1.getSaldo());
+				System.out.println("Saldo de: " + "R$ " + l1.getSaldo());
 				System.out.println();					
 				}
 				
 				
 			
 				if(opcao == 'B' || opcao == 'b') {			
-				System.out.printf("Valor à ser adicionado: " + "R$");	
+				System.out.printf("Valor à ser adicionado: " + "R$ ");	
 				dep1 = input.nextDouble();
-				System.out.println("\nValor atualizado: " + "R$" + l1.getDeposito(dep1));			
+				System.out.println("\nValor atualizado: " + "R$ " + l1.getDeposito(dep1));			
 				System.out.println();
 				}
 				
 			
 				if(opcao == 'C'|| opcao == 'c') {
-				System.out.printf("Valor à ser retirado: " + "R$");	
+				System.out.printf("Valor à ser retirado: " + "R$ ");	
 				saq1 = input.nextDouble();
-				System.out.println("\nValor retirado: " + "R$" + l1.getSaque(saq1));			
+				System.out.println("\nValor atualizo após saque: " + "R$ " + l1.getSaque(saq1));			
 				System.out.println();
 				}							
 														

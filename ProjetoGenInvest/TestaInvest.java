@@ -1,5 +1,8 @@
 package br.com.generation.ProjetoGenInvest;
 
+import java.io.IOException;
+import java.util.Scanner;
+
 public class TestaInvest extends Investimento {
 
 	public TestaInvest(double valorIn, double valorOut, double fixa, double tesouro, double variavel) {
@@ -7,13 +10,22 @@ public class TestaInvest extends Investimento {
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
+		
+		Scanner input = new Scanner(System.in);
 		
 		Fixa f1 = new Fixa();
 		Tesouro t1 = new Tesouro();
-		Variavel v1 = new Variavel();
-				
-		//Fixa
+		Variavel v1 = new Variavel();		
+		char opcao;
+		
+		
+	do {	
+		System.out.println("Escolha uma opção de investimento: \nA - Renda Fixa:\nB - Tesouro:\nC - Renda Variavel: ");
+		opcao = input.next().charAt(0);
+		
+		if(opcao == 'A' || opcao == 'a') {
+			//Fixa
 		f1.setTitulo("CDB IPCA +6,07%");
 		f1.setRentA(14.16);
 		f1.setInvestMin(100.00);
@@ -34,6 +46,10 @@ public class TestaInvest extends Investimento {
 		System.out.println();
 		System.out.println("====================================================================================================================================================================================");
 				
+			}
+			
+				
+		if(opcao == 'B' || opcao == 'b') {
 		//Tesouro Direto
 		System.out.println();
 		t1.setTitulo("Tesouro Prefixado 2024");
@@ -55,7 +71,10 @@ public class TestaInvest extends Investimento {
 		System.out.println("Vencimento: " + t1.getVencF());
 		System.out.println();
 		System.out.println("====================================================================================================================================================================================");
-
+		
+			}
+		
+		if(opcao == 'C' || opcao == 'c') {
 		//Variavel
 		System.out.println();
 		v1.setTitulo("Renda Variavel"); 
@@ -81,7 +100,19 @@ public class TestaInvest extends Investimento {
 		System.out.println("Investimento Mínimo: " + "R$" + v1.getInvestMin());
 		System.out.println("Preço Unitário: " + "R$" + v1.getPrecoUni());
 		System.out.println("Vencimento: " + v1.getVencF());
+		System.out.println();
+		System.out.println("====================================================================================================================================================================================");
 
+		
+			}
+		
+		System.out.println("Digite X para sair!");
+		System.out.println();
+		}
+	
+		while(opcao != 'x');
+		System.out.println("Voltando para tela inicial!");
+		
+		input.close();
 	}
-
 }

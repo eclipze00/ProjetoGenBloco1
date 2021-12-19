@@ -19,13 +19,6 @@ public class TelaLogin {
 		this.senha = senha;
 	}
 	public String getInvalido(String invalid) {
-		if(login == invalido) {
-			login = invalido;
-						
-		if(senha == invalido) {
-			senha = invalido;
-			}
-		}
 		return invalido;
 	}
 	public void setInvalido(String invalido) {

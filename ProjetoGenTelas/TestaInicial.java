@@ -1,11 +1,10 @@
 package br.com.generation.ProjetoGenTelas;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class TestaInicial {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);				
 		TelaInicial l1 = new TelaInicial();
 		
@@ -34,14 +33,15 @@ public class TestaInicial {
 			
 			
 			do {		
-				System.out.printf("Escolha uma opção: \nA - Consulta de saldo:\nB - Deposito:\nC - Saque: ");
+				System.out.println("Escolha uma opção: \nA - Consulta de saldo:\nB - Deposito:\nC - Saque:\nD - Investimentos.");
 				opcao = input.next().charAt(0);
 									
 				if(opcao == 'A' || opcao == 'a') {
 				System.out.println("Saldo de: " + "R$ " + l1.getSaldo());
-				System.out.println();					
+				System.out.println();	
+				System.out.println("====================================================================================================================================================================================");
+				System.out.println();
 				}
-				
 				
 			
 				if(opcao == 'B' || opcao == 'b') {			
@@ -49,15 +49,29 @@ public class TestaInicial {
 				dep1 = input.nextDouble();
 				System.out.println("\nValor atualizado: " + "R$ " + l1.getDeposito(dep1));			
 				System.out.println();
+				System.out.println("====================================================================================================================================================================================");
+				System.out.println();
 				}
-				
 			
 				if(opcao == 'C'|| opcao == 'c') {
 				System.out.printf("Valor à ser retirado: " + "R$ ");	
 				saq1 = input.nextDouble();
 				System.out.println("\nValor atualizo após saque: " + "R$ " + l1.getSaque(saq1));			
 				System.out.println();
-				}							
+				System.out.println("====================================================================================================================================================================================");
+				System.out.println();
+				}
+				
+				if(opcao == 'D'|| opcao == 'd') {
+					System.out.println();
+					System.out.println("Redirecionando para página de investimentos.");
+					System.out.println();
+					System.out.println("====================================================================================================================================================================================");
+					System.out.println();
+				}
+				
+				System.out.println("Digite X para sair!");
+				System.out.println();
 														
 			}
 			while(opcao != 'x');

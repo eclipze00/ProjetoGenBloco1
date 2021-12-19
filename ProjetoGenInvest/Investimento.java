@@ -8,7 +8,7 @@ public class Investimento {
 	private double variavel; // Criptomoeda
 	
 		
-	public Investimento(double valorIn, double valorOut, double fixa, double tesouro, double variavel) {
+	public Investimento(double fixa, double tesouro, double variavel) {
 		super();
 		this.fixa = fixa;
 		this.tesouro = tesouro;

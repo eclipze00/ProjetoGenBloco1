@@ -1,16 +1,15 @@
 package br.com.generation.ProjetoGenInvest;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class TestaInvest extends Investimento {
 
-	public TestaInvest(double valorIn, double valorOut, double fixa, double tesouro, double variavel) {
-		super(valorIn, valorOut, fixa, tesouro, variavel);
+	public TestaInvest(double fixa, double tesouro, double variavel) {
+		super(fixa, tesouro, variavel);
 		// TODO Auto-generated constructor stub
 	}
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
 		
@@ -24,8 +23,8 @@ public class TestaInvest extends Investimento {
 		System.out.println("Escolha uma opção de investimento: \nA - Renda Fixa:\nB - Tesouro:\nC - Renda Variavel: ");
 		opcao = input.next().charAt(0);
 		
-		if(opcao == 'A' || opcao == 'a') {
-			//Fixa
+		//Fixa
+		if(opcao == 'A' || opcao == 'a') {			
 		f1.setTitulo("CDB IPCA +6,07%");
 		f1.setRentA(14.16);
 		f1.setInvestMin(100.00);
@@ -45,7 +44,7 @@ public class TestaInvest extends Investimento {
 		System.out.println("Vencimento: " + f1.getVencF());
 		System.out.println();
 		System.out.println("====================================================================================================================================================================================");
-				
+		System.out.println();		
 			}
 			
 				
@@ -71,17 +70,17 @@ public class TestaInvest extends Investimento {
 		System.out.println("Vencimento: " + t1.getVencF());
 		System.out.println();
 		System.out.println("====================================================================================================================================================================================");
-		
+		System.out.println();
 			}
 		
 		if(opcao == 'C' || opcao == 'c') {
 		//Variavel
 		System.out.println();
 		v1.setTitulo("Renda Variavel"); 
-		v1.setRentA(12.50); // Porcetagem 
-		v1.setInvestMin(250.00); // Valor minimo
-		v1.setPrecoUni(1000.00); // valor maximo --> ?
-		v1.setVencF("Sem tempo definido."); //tempo de investimento 
+		v1.setRentA(12.50); 
+		v1.setInvestMin(250.00); 
+		v1.setPrecoUni(1000.00); 
+		v1.setVencF("Sem tempo definido."); 
 		v1.setSobre("A renda variável consiste em diferentes tipos de ativos financeiros com uma mesma característica: rentabilidade imprevisível."
 			    + "\nPor isso, seus investimentos costumam estar associados à palavra volatilidade." 
 			    + "\nNormalmente, essa instabilidade acontece por esses ativos dependerem muito do cenário econômico e político do país, assim como do desempenho de empresas e áreas do mercado privado."
@@ -102,7 +101,7 @@ public class TestaInvest extends Investimento {
 		System.out.println("Vencimento: " + v1.getVencF());
 		System.out.println();
 		System.out.println("====================================================================================================================================================================================");
-
+		System.out.println();
 		
 			}
 		

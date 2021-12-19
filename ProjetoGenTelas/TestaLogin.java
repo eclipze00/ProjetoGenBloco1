@@ -23,8 +23,7 @@ public class TestaLogin{
 				
 		System.out.printf("Login: " + t1.getLogin(null));				
 		System.out.printf("\nSenha: " + t1.getSenha(null));	
-		
-	
+			
 	}	
 }	
 										

@@ -26,7 +26,7 @@ public class TestaInicial {
 			System.out.println("Nome completo: " + l1.getNome());
 			System.out.println();
 		
-			System.out.println("Agência: " + l1.getAgencia());	
+			System.out.println("AgÃªncia: " + l1.getAgencia());	
 			System.out.println();
 		
 			System.out.println("Conta: " + l1.getConta());	
@@ -34,7 +34,7 @@ public class TestaInicial {
 			
 			
 			do {		
-				System.out.println("Escolha uma opção (A/B/C): ");
+				System.out.println("Escolha uma opÃ§Ã£o: \nA - Consulta de saldo;\nB - Deposito;\nC - Saque.): ");
 				opcao = (char)System.in.read();
 									
 				if(opcao == 'A' || opcao == 'a') {
@@ -45,7 +45,7 @@ public class TestaInicial {
 				
 			
 				if(opcao == 'B' || opcao == 'b') {			
-				System.out.printf("Valor à ser adicionado: " + "R$");	
+				System.out.printf("Valor Ã  ser adicionado: " + "R$");	
 				dep1 = input.nextDouble();
 				System.out.println("\nValor atualizado: " + "R$" + l1.getDeposito(dep1));			
 				System.out.println();
@@ -53,7 +53,7 @@ public class TestaInicial {
 				
 			
 				if(opcao == 'C'|| opcao == 'c') {
-				System.out.printf("Valor à ser retirado: " + "R$");	
+				System.out.printf("Valor Ã  ser retirado: " + "R$");	
 				saq1 = input.nextDouble();
 				System.out.println("\nValor retirado: " + "R$" + l1.getSaque(saq1));			
 				System.out.println();
@@ -61,7 +61,7 @@ public class TestaInicial {
 														
 			}
 			while(opcao != 'x');
-			System.out.println("Sessão finalizada!");
+			System.out.println("SessÃ£o finalizada!");
 			
 			input.close();
 	}

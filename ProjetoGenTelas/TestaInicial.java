@@ -11,8 +11,7 @@ public class TestaInicial {
 		
 		char opcao;
 		double dep1 = 0;
-		double saq1 = 0;
-		double ext1 = 0; 
+		double saq1 = 0;		
 		
 		l1.setNome("Paulo da Silva");
 		l1.setAgencia("0001");
@@ -35,7 +34,7 @@ public class TestaInicial {
 			
 			
 			do {		
-				System.out.println("Escolha uma opção (A/B/C/D): ");
+				System.out.println("Escolha uma opção (A/B/C): ");
 				opcao = (char)System.in.read();
 									
 				if(opcao == 'A' || opcao == 'a') {
@@ -58,13 +57,8 @@ public class TestaInicial {
 				saq1 = input.nextDouble();
 				System.out.println("\nValor retirado: " + "R$" + l1.getSaque(saq1));			
 				System.out.println();
-				}
-				
-			
-				if(opcao == 'D'|| opcao == 'd') {
-				System.out.println("Transições realizadas: " + "R$" + l1.getExtrato(ext1));
-				ext1 = input.nextDouble();
-				}										
+				}							
+														
 			}
 			while(opcao != 'x');
 			System.out.println("Sessão finalizada!");

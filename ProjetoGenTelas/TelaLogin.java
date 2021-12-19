@@ -3,33 +3,35 @@ package br.com.generation.ProjetoGenTelas;
 public class TelaLogin {
 	
 	String login;
-	String senha;	
+	String senha;
 	String invalido;
 	
+	public String getLogin(String log1) {
+		return login;
+	}
+	public void setLogin(String login) {
+		this.login = login;
+	}
+	public String getSenha(String pass1) {
+		return senha;
+	}
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+	public String getInvalido(String invalid) {
+		if(login == invalido) {
+			login = invalido;
+						
+		if(senha == invalido) {
+			senha = invalido;
+			}
+		}
+		return invalido;
+	}
+	public void setInvalido(String invalido) {
+		this.invalido = invalido;
+	}
+	
 		
-	void escreva() {
-		System.out.println("|===================|");
-		System.out.println("|                   |");
-		System.out.println("|Informe seu login: |");
-		System.out.println("|                   |");
-		System.out.println("|===================|");
-		System.out.println();
-	}
-	void password() {
-		System.out.println("|===================|");
-		System.out.println("|                   |");
-		System.out.println("|Informe sua senha: |");
-		System.out.println("|                   |");
-		System.out.println("|===================|");
-		System.out.println();
-	}
-	void error() {
-		System.out.println("|===================|");
-		System.out.println("|                   |");
-		System.out.println("|   Erro no login   |");
-		System.out.println("|                   |");
-		System.out.println("|===================|");
-		System.out.println();
-	}
-
+	
 }
